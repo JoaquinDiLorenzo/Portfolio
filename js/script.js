@@ -88,18 +88,24 @@ const $form = document.querySelector("#form");
 $form.addEventListener("submit", handleSubmit );
 
 async function handleSubmit(e) {
-    e.preventDefault();
-    const form = new FormData(this);
-    const response = await fetch(this.action, {
-        method: this.method,
-        body: form,
-        headers: {
-            'Accept': 'application/json'
-        }
-    });
+        e.preventDefault();
+        const form = new FormData(this);
+        const response = await fetch(this.action, {
+                method: this.method,
+                body: form,
+                headers: {
+                        'Accept': 'application/json'
+                }
+        });
 
-    if(response.ok) {
-        this.reset();
-        alert('Thank you for contacting me, I will answer you as soon as possible!!!');
-    }
+        if(response.ok) {
+                this.reset();
+                // Usa el alert traducido si existe setLanguage
+                let lang = document.getElementById('lang-btn')?.textContent === 'EN' ? 'es' : 'en';
+                if(window.translations && window.translations[lang]?.alert) {
+                    alert(window.translations[lang].alert);
+                } else {
+                    alert('Thank you for contacting me, I will answer you as soon as possible!!!');
+                }
+        }
 }

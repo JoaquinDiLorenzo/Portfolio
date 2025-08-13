@@ -1,3 +1,87 @@
+.header .lang-toggler {
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px 0 0;
+    z-index: 1;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--main-color);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.3s, color 0.3s;
+    text-transform: none;
+}
+.header .lang-toggler:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+@media (max-width: 991px) {
+    .header .lang-toggler {
+        width: 44px;
+        height: 44px;
+        font-size: 1rem;
+        margin: 0 8px 0 0;
+    }
+}
+@media (max-width: 767px) {
+    .header .lang-toggler {
+        width: 40px;
+        height: 40px;
+        font-size: 0.95rem;
+        margin: 0 4px 0 0;
+    }
+    .row.flex-between {
+        padding: 0 8px;
+    }
+}
+@media (max-width: 575px) {
+    .header .lang-toggler {
+        width: 36px;
+        height: 36px;
+        font-size: 0.9rem;
+        margin: 0;
+        position: relative;
+        left: 4vw;
+    }
+    .row.flex-between {
+        padding: 0 2px;
+    }
+}
+.header .lang-toggler {
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px 0 0;
+    z-index: 1;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--main-color);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.3s, color 0.3s;
+}
+.header .lang-toggler:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+.row.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 /* -------------------
 Fonts
