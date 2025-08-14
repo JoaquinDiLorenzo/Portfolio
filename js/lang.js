@@ -10,7 +10,7 @@ window.translations = {
     },
     about: {
       title: "Sobre mi",
-      desc: "Apasionado por la programación y el desarrollo de software. Desde 2020 trabajo en proyectos reales: desde sitios web en producción hasta aplicaciones de análisis de datos con Python, pandas y matplotlib. Curso 3er año de Licenciatura en Sistemas en la UNLP y participo en el equipo de programación del Club de Finanzas UNLP, donde combino análisis de datos y economía. Trabajo con Python (Django, análisis de datos), Java (POO, patrones de diseño) y bases de datos como PostgreSQL. Me motiva resolver problemas y transformar ideas en soluciones funcionales.",
+      desc: "Apasionado por la programación y el desarrollo de software. Desde 2024 trabajo en proyectos reales: desde sitios web en producción hasta aplicaciones de análisis de datos con Python, pandas y matplotlib. Curso 3er año de Licenciatura en Sistemas en la UNLP y participo en el equipo de programación del Club de Finanzas UNLP, donde combino análisis de datos y economía. Trabajo con Python (Django, análisis de datos), Java (POO, patrones de diseño) y bases de datos como PostgreSQL. Me motiva resolver problemas y transformar ideas en soluciones funcionales.",
       skills: "Habilidades",
       download: "descargar cv",
       contact: "contactame"
@@ -78,7 +78,7 @@ window.translations = {
     },
     about: {
       title: "About me",
-      desc: "Passionate about programming and software development. Since 2020 I have worked on real projects: from production websites to data analysis applications with Python, pandas, and matplotlib. I am in my 3rd year of Systems Engineering at UNLP and participate in the programming team of Club de Finanzas UNLP, where I combine data analysis and economics. I work with Python (Django, data analysis), Java (OOP, design patterns), and databases like PostgreSQL. I am motivated by solving problems and turning ideas into functional solutions.",
+      desc: "Passionate about programming and software development. Since 2024 I have worked on real projects: from production websites to data analysis applications with Python, pandas, and matplotlib. I am in my 3rd year of Computer Science at UNLP and participate in the programming team of Club de Finanzas UNLP, where I combine data analysis and economics. I work with Python (Django, data analysis), Java (OOP, design patterns), and databases like PostgreSQL. I am motivated by solving problems and turning ideas into functional solutions.",
       skills: "Skills",
       download: "download cv",
       contact: "contact me"
