@@ -61,10 +61,8 @@ window.translations = {
     },
     contact: {
       title: "contactame",
-      name: "Nombre",
-      email: "Email",
-      message: "Mensaje",
-      send: "enviar mensaje",
+      mailBtn: "Escribime un mail",
+      mailHint: "¡Haz clic y redacta tu mensaje directamente en tu app de correo!",
       emailTitle: "Email",
       social: "Redes Sociales"
     },
@@ -131,10 +129,8 @@ window.translations = {
     },
     contact: {
       title: "contact me",
-      name: "Name",
-      email: "Email",
-      message: "Message",
-      send: "send message",
+      mailBtn: "Send me an email",
+      mailHint: "Click and compose your message directly in your email app!",
       emailTitle: "Email",
       social: "Social Networks"
     },
@@ -207,10 +203,17 @@ function setLanguage(lang) {
   });
   // Contact
   document.querySelector('.contact-section .section-title h2').textContent = translations[lang].contact.title;
-  document.querySelector('input[name="_name"]').placeholder = translations[lang].contact.name;
-  document.querySelector('input[name="_email"]').placeholder = translations[lang].contact.email;
-  document.querySelector('textarea[name="_message"]').placeholder = translations[lang].contact.message;
-  document.querySelector('.submit-btn .btn').textContent = translations[lang].contact.send;
+  
+  // Traducir botón de mail y texto de ayuda
+  const mailBtn = document.querySelector('.contact-mail-btn');
+  const mailHint = document.querySelector('.mail-hint');
+  if(mailBtn) {
+    mailBtn.innerHTML = `<i class="fas fa-envelope"></i> ${translations[lang].contact.mailBtn}`;
+  }
+  if(mailHint) {
+    mailHint.textContent = translations[lang].contact.mailHint;
+  }
+  
   document.querySelectorAll('.contact-info-item h3')[0].textContent = translations[lang].contact.emailTitle;
   document.querySelectorAll('.contact-info-item h3')[1].textContent = translations[lang].contact.social;
 }
