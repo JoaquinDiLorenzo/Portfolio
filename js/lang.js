@@ -4,15 +4,16 @@ window.translations = {
     nav: ["Inicio", "Sobre mí", "Portafolio", "Contacto"],
     home: {
       hello: "Hola, soy",
-      role: "Desarrollador de Software",
+      role: "Ingeniero de Datos",
       about: "más sobre mí",
       portfolio: "portafolio"
     },
     about: {
       title: "Sobre mi",
-      desc: "Apasionado por la programación y el desarrollo de software. Desde 2024 trabajo en proyectos reales: desde sitios web en producción hasta aplicaciones de análisis de datos con Python, pandas y matplotlib. Curso 3er año de Licenciatura en Sistemas en la UNLP y participo en el equipo de programación del Club de Finanzas UNLP, donde combino análisis de datos y economía. Trabajo con Python (Django, análisis de datos), Java (POO, patrones de diseño) y bases de datos como PostgreSQL. Me motiva resolver problemas y transformar ideas en soluciones funcionales.",
+      desc: "Trabajo en ingeniería de datos, enfocado en el desarrollo de pipelines ETL con Python y SQL. Tengo experiencia procesando datos geoespaciales (PostGIS, QGIS) e integrando múltiples fuentes de datos para generar datasets estructurados y utilizables. \n Actualmente participo en proyectos donde diseño y mantengo pipelines de datos, realizo procesos de ingestión, limpieza y transformación, y trabajo con datos reales (demográficos, geoespaciales y comerciales). Me interesa construir sistemas de datos confiables y escalables que permitan transformar datos en información útil.",
       skills: "Habilidades",
-      download: "descargar cv",
+      downloadEs: "Descargar CV",
+      downloadEn: "Download CV",
       contact: "contactame"
     },
     portfolio: {
@@ -22,7 +23,23 @@ window.translations = {
       github: "GitHub",
       more: "Más Informacion y Demo",
       online: "Ver Online",
+      itemsByTitle: {
+        "Proyecto BI & GIS – Gilera": "Desarrollo de pipelines ETL para la integración de datos comerciales, demográficos y geoespaciales en Argentina. Incluye procesos de ingestión, limpieza, normalización y modelado de datos utilizando Python, SQL y PostGIS. Se integraron múltiples fuentes de datos (INDEC y datos comerciales) para generar datasets estructurados orientados al análisis y la toma de decisiones.",
+        "Optimizador de Carteras": "Optimizador de carteras de inversión basado en la teoría de Markowitz. Permite seleccionar activos argentinos e internacionales, configura restricciones personalizadas y maximiza el Sharpe Ratio. Interfaz interactiva con Streamlit.",
+        "Club de Finanzas UNLP": "Sitio web institucional desarrollado para el Club de Finanzas UNLP.  Permite la gestión de miembros, eventos y la publicación de artículos sobre finanzas, economía e inversiones.  Incluye panel de administración seguro, autenticación y base de datos relacional.",
+        "Alquil.ar": "Proyecto realizado para la materia 'Ingeniera de Software 2' para la gestión integral de alquiler de maquinarias.  Incluye sistema de reservas, control de stock, penalizaciones por entregas tardías o roturas, integración con Mercado Pago para cobros,etc.",
+        "Letterboxd Recommender": "Sistema de recomendación de películas basado en machine learning, que utiliza datos de la plataforma Letterboxd.  Procesa valoraciones y preferencias del usuario para sugerir películas personalizadas. También cuenta con una sección llamada 'Movie Night' la cual cruza los datos de dos personas y recomienda peliculas.",
+        "Project Tree": "Herramienta para generar automáticamente (en formato txt) la estructura de carpetas y archivos base para proyectos de software, permitiendo personalizar plantillas según el tipo de desarrollo. Ideal para contextualizar modelos de IA sobre la estructura de tu proyecto."
+      },
       items: [
+        {
+          desc: "Optimizador de carteras de inversión basado en la teoría de Markowitz. Permite seleccionar activos argentinos e internacionales, configura restricciones personalizadas y maximiza el Sharpe Ratio. Interfaz interactiva con Streamlit.",
+          general: [
+            "Python - Streamlit - Pandas - Matplotlib ",
+            null,
+            "https://optimizador-de-carteras.streamlit.app/"
+          ]
+        },
         {
           desc: "Sitio web institucional desarrollado para el Club de Finanzas UNLP.  Permite la gestión de miembros, eventos y la publicación de artículos sobre finanzas, economía e inversiones.  Incluye panel de administración seguro, autenticación y base de datos relacional.",
           general: [
@@ -56,6 +73,10 @@ window.translations = {
             "https://www.linkedin.com/posts/joaquin-di-lorenzo-9306ba337_buenos-d%C3%ADas-recientemente-decid%C3%AD-retomar-activity-7320163726278500352-3_V0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFSku7QBgLrTP1tuq9PgLrCYSV6EREJ-O2s",
             "https://projectree.streamlit.app/"
           ]
+        },
+        {
+          desc: "Desarrollo de pipelines ETL para la integración de datos comerciales, demográficos y geoespaciales en Argentina. Incluye procesos de ingestión, limpieza, normalización y modelado de datos utilizando Python, SQL y PostGIS. Se integraron múltiples fuentes de datos (INDEC y datos comerciales) para generar datasets estructurados orientados al análisis y la toma de decisiones.",
+          general: []
         }
       ]
     },
@@ -72,15 +93,16 @@ window.translations = {
     nav: ["Home", "About", "Portfolio", "Contact"],
     home: {
       hello: "Hi, I'm",
-      role: "Software Developer",
+      role: "Data Engineer",
       about: "more about me",
       portfolio: "portfolio"
     },
     about: {
       title: "About me",
-      desc: "Passionate about programming and software development. Since 2024 I have worked on real projects: from production websites to data analysis applications with Python, pandas, and matplotlib. I am in my 3rd year of Computer Science at UNLP and participate in the programming team of Club de Finanzas UNLP, where I combine data analysis and economics. I work with Python (Django, data analysis), Java (OOP, design patterns), and databases like PostgreSQL. I am motivated by solving problems and turning ideas into functional solutions.",
+      desc: "I work in data engineering, focused on building ETL pipelines using Python and SQL.\nI have experience processing geospatial data (PostGIS, QGIS) and integrating multiple data sources to create structured and usable datasets.\n\nCurrently, I’m involved in projects where I design and maintain data pipelines, handle data ingestion, cleaning and transformation, and work with real-world datasets (demographic, geospatial and commercial data).\n\nI’m interested in building reliable and scalable data systems that turn raw data into useful information.",
       skills: "Skills",
-      download: "download cv",
+      downloadEs: "Descargar CV",
+      downloadEn: "Download CV",
       contact: "contact me"
     },
     portfolio: {
@@ -90,7 +112,23 @@ window.translations = {
       github: "GitHub",
       more: "More Info & Demo",
       online: "View Online",
+      itemsByTitle: {
+        "Proyecto BI & GIS – Gilera": "Development of ETL pipelines to integrate commercial, demographic and geospatial data in Argentina. Includes data ingestion, cleaning, normalization and data modeling using Python, SQL and PostGIS. Multiple data sources (INDEC and commercial data) were integrated to produce structured datasets for analysis and decision-making.",
+        "Optimizador de Carteras": "Investment portfolio optimizer based on Markowitz theory. It allows selecting Argentine and international assets, configuring custom constraints, and maximizing the Sharpe Ratio. Interactive Streamlit interface.",
+        "Club de Finanzas UNLP": "Institutional website developed for Club de Finanzas UNLP. Allows management of members, events, and publication of articles on finance, economics, and investments. Includes secure admin panel, authentication, and relational database.",
+        "Alquil.ar": "Project for the course 'Software Engineering 2' for comprehensive machinery rental management. Includes reservation system, stock control, penalties for late returns or damages, integration with Mercado Pago for payments, etc.",
+        "Letterboxd Recommender": "Movie recommendation system based on machine learning, using data from the Letterboxd platform. Processes user ratings and preferences to suggest personalized movies. Also features a 'Movie Night' section that combines data from two people and recommends movies.",
+        "Project Tree": "Tool to automatically generate (in txt format) the folder and base file structure for software projects, allowing you to customize templates according to the type of development. Ideal for contextualizing AI models about your project's structure."
+      },
       items: [
+        {
+          desc: "Investment portfolio optimizer based on Markowitz theory. It allows selecting Argentine and international assets, configuring custom constraints, and maximizing the Sharpe Ratio. Interactive Streamlit interface.",
+          general: [
+            "Python - Streamlit - Pandas - Matplotlib ",
+            null,
+            "https://optimizador-de-carteras.streamlit.app/"
+          ]
+        },
         {
           desc: "Institutional website developed for Club de Finanzas UNLP.  Allows management of members, events, and publication of articles on finance, economics, and investments.  Includes secure admin panel, authentication, and relational database.",
           general: [
@@ -124,6 +162,10 @@ window.translations = {
             "https://www.linkedin.com/posts/joaquin-di-lorenzo-9306ba337_buenos-d%C3%ADas-recientemente-decid%C3%AD-retomar-activity-7320163726278500352-3_V0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFSku7QBgLrTP1tuq9PgLrCYSV6EREJ-O2s",
             "https://projectree.streamlit.app/"
           ]
+        },
+        {
+          desc: "Development of ETL pipelines to integrate commercial, demographic and geospatial data in Argentina. Includes data ingestion, cleaning, normalization and data modeling using Python, SQL and PostGIS. Multiple data sources (INDEC and commercial data) were integrated to produce structured datasets for analysis and decision-making.",
+          general: []
         }
       ]
     },
@@ -153,8 +195,18 @@ function setLanguage(lang) {
   document.querySelector('.about-section .section-title h2').textContent = translations[lang].about.title;
   document.querySelector('.about-text p').textContent = translations[lang].about.desc;
   document.querySelector('.about-text h3').textContent = translations[lang].about.skills;
-  document.querySelector('.about-buttons a.btn').textContent = translations[lang].about.download;
-  document.querySelectorAll('.about-buttons a.btn')[1].textContent = translations[lang].about.contact;
+  const downloadEsBtn = document.querySelector('.about-buttons .cv-btn-es');
+  const downloadEnBtn = document.querySelector('.about-buttons .cv-btn-en');
+  const aboutContactBtn = document.querySelector('.about-buttons .about-contact-btn');
+  if (downloadEsBtn) {
+    downloadEsBtn.textContent = translations[lang].about.downloadEs;
+    downloadEsBtn.style.display = lang === 'es' ? '' : 'none';
+  }
+  if (downloadEnBtn) {
+    downloadEnBtn.textContent = translations[lang].about.downloadEn;
+    downloadEnBtn.style.display = lang === 'en' ? '' : 'none';
+  }
+  if (aboutContactBtn) aboutContactBtn.textContent = translations[lang].about.contact;
   // Portfolio
   document.querySelector('.portfolio-section .section-title h2').textContent = translations[lang].portfolio.title;
   document.querySelectorAll('.portfolio-item-title').forEach((el, i) => {
@@ -162,44 +214,38 @@ function setLanguage(lang) {
   });
   document.querySelectorAll('.view-project-btn').forEach(btn => btn.textContent = translations[lang].portfolio.view);
   // Descripción y general-info de cada portfolio item
-  document.querySelectorAll('.portfolio-item').forEach((item, idx) => {
+  document.querySelectorAll('.portfolio-item').forEach((item) => {
     // Descripción
     const desc = item.querySelector('.portfolio-item-details .description p');
-    if(desc && translations[lang].portfolio.items[idx]?.desc) {
-      desc.textContent = translations[lang].portfolio.items[idx].desc;
-    }
+    const title = item.querySelector('.portfolio-item-title')?.textContent?.trim();
+    const translatedDesc = title ? translations[lang].portfolio.itemsByTitle?.[title] : null;
+    if (desc && translatedDesc) desc.textContent = translatedDesc;
     // General info
     const generalLis = item.querySelectorAll('.portfolio-item-details .general-info li');
-    const generalData = translations[lang].portfolio.items[idx]?.general || [];
-    // Limpiar todos los li para el primer item si está en inglés
-    if(idx === 0 && lang === 'en') {
-      // Solo mostrar el li de 'View Online'
-      generalLis.forEach((li, i) => {
-        if(i === 0) {
-          li.innerHTML = `${translations[lang].portfolio.tech} - <span>${generalData[0]}</span>`;
-        } else if(i === 1) {
-          li.innerHTML = `${translations[lang].portfolio.online} - <span><a href="${generalData[2]}" target="_blank">${generalData[2]}</a></span>`;
-        } else {
-          li.style.display = 'none';
-        }
-      });
-    } else {
-      generalLis.forEach((li, i) => {
-        li.style.display = '';
-        if(i === 0 && generalData[0]) {
-          li.innerHTML = `${translations[lang].portfolio.tech} - <span>${generalData[0]}</span>`;
-        }
-        if(i === 1 && generalData[1]) {
-          li.innerHTML = `${translations[lang].portfolio.github} - <span><a href="${generalData[1]}" target="_blank">${generalData[1]}</a></span>`;
-        }
-        if(i === 2 && generalData[2]) {
-          li.innerHTML = `${translations[lang].portfolio.more} - <span><a href="${generalData[2]}" target="_blank">${lang === 'es' ? 'Ver publicacion de Linkedin' : 'View Linkedin Post'}</a></span>`;
-        }
-        if(i === 3 && generalData[3]) {
-          li.innerHTML = `${translations[lang].portfolio.online} - <span><a href="${generalData[3]}" target="_blank">${generalData[3]}</a></span>`;
-        }
-      });
-    }
+
+    // Traducción de labels basada en data-info (no depende de cantidad/orden de <li>)
+    generalLis.forEach((li) => {
+      const infoKey = li.getAttribute('data-info');
+      if (!infoKey) return;
+
+      const span = li.querySelector('span');
+      const spanHtml = span ? span.innerHTML : '';
+
+      if (infoKey === 'tech') {
+        li.innerHTML = `${translations[lang].portfolio.tech} - <span>${spanHtml}</span>`;
+      }
+      if (infoKey === 'github') {
+        li.innerHTML = `${translations[lang].portfolio.github} - <span>${spanHtml}</span>`;
+      }
+      if (infoKey === 'more') {
+        li.innerHTML = `${translations[lang].portfolio.more} - <span>${spanHtml}</span>`;
+        const link = li.querySelector('a');
+        if (link) link.textContent = lang === 'es' ? 'Ver publicacion de Linkedin' : 'View Linkedin Post';
+      }
+      if (infoKey === 'online') {
+        li.innerHTML = `${translations[lang].portfolio.online} - <span>${spanHtml}</span>`;
+      }
+    });
   });
   // Contact
   document.querySelector('.contact-section .section-title h2').textContent = translations[lang].contact.title;
@@ -223,6 +269,8 @@ window.addEventListener('DOMContentLoaded', () => {
   let lang = 'es';
   const btn = document.getElementById('lang-btn');
   if (!btn) return;
+  btn.textContent = lang === 'es' ? 'EN' : 'ES';
+  setLanguage(lang);
   btn.addEventListener('click', () => {
     lang = lang === 'es' ? 'en' : 'es';
     btn.textContent = lang === 'es' ? 'EN' : 'ES';
